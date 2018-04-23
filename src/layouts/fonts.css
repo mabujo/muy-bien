@@ -1,0 +1,53 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3565313, 2018-04-23T06:46:51-0400
+ *
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are
+ * explicitly restricted from using the Licensed Webfonts(s).
+ *
+ * You may obtain a valid license at the URLs below.
+ *
+ * Webfont: Brasley-Bold by Nicolas Deslé
+ * URL: https://www.myfonts.com/fonts/nicolasdesle/brasley/bold/
+ *
+ * Webfont: Brasley-Medium by Nicolas Deslé
+ * URL: https://www.myfonts.com/fonts/nicolasdesle/brasley/medium/
+ *
+ * Webfont: Brasley-Regular by Nicolas Deslé
+ * URL: https://www.myfonts.com/fonts/nicolasdesle/brasley/regular/
+ *
+ *
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3565313
+ * Licensed pageviews: 20,000
+ * Webfonts copyright: Copyright (c) 2017 by Nicolas Desle. All rights reserved.
+ *
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/366701");
+
+@font-face {font-family: 'Brasley-Bold';src: url('../fonts/366701_0_0.eot');src: url('../fonts/366701_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/366701_0_0.woff2') format('woff2'),url('../fonts/366701_0_0.woff') format('woff'),url('../fonts/366701_0_0.ttf') format('truetype');}
+
+
+@font-face {font-family: 'Brasley-Medium';src: url('../fonts/366701_1_0.eot');src: url('../fonts/366701_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/366701_1_0.woff2') format('woff2'),url('../fonts/366701_1_0.woff') format('woff'),url('../fonts/366701_1_0.ttf') format('truetype');}
+
+@font-face {font-family: 'Brasley-Regular';src: url('../fonts/366701_2_0.eot');src: url('../fonts/366701_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/366701_2_0.woff2') format('woff2'),url('../fonts/366701_2_0.woff') format('woff'),url('../fonts/366701_2_0.ttf') format('truetype');}
+
+.Brasley-Bold {
+    font-family: Brasley-Bold, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+.Brasley-Medium {
+    font-family: Brasley-Medium, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+    font-weight: normal;
+    font-style: normal;
+}
+.Brasley-Regular {
+    font-family: Brasley-Regular, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
+    font-weight: normal;
+    font-style: normal;
+}
