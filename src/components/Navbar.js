@@ -1,14 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
-
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import NavbarStyles from '../styles/Navbar.module.sass'
 
 const Navbar = () => (
-  <nav className="navbar is-transparent">
+  <nav className={NavbarStyles.navbar}>
     <div className="container">
       <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
+        <Link to="/" className={NavbarStyles.brandLink}>
           Muy Bien Espanol
         </Link>
       </div>
@@ -18,6 +16,6 @@ const Navbar = () => (
       </div>
     </div>
   </nav>
-)
+);
 
 export default Navbar
