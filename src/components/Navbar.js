@@ -3,8 +3,8 @@ import Link from 'gatsby-link'
 import NavbarStyles from '../styles/Navbar.module.sass'
 
 const Navbar = () => (
-  <nav className={NavbarStyles.navbar}>
-    <div className="container">
+  <nav className={`${NavbarStyles.navbar} container`}>
+    <div>
       <div className="navbar-brand">
         <Link to="/" className={NavbarStyles.brandLink}>
           Muy Bien Espanol

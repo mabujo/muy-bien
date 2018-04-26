@@ -4,10 +4,11 @@ import Helmet from 'react-helmet'
 
 import Navbar from '../components/Navbar'
 
-import './all.sass'
+import '../styles/all.sass'
 
 const TemplateWrapper = ({ children }) => (
   <div>
+    {console.log(children)}
     <Helmet title="Learn Spanish Online | Muy Bien Espanol" />
     <Navbar />
     <div>{children()}</div>
@@ -17,5 +18,6 @@ const TemplateWrapper = ({ children }) => (
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
 };
+
 
 export default TemplateWrapper
