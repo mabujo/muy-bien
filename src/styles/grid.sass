@@ -1,0 +1,40 @@
+$max-width: 1200px
+$columns: 8
+
+.container
+  max-width: $max-width
+  margin: 0 auto
+  padding: 0.5em 1em
+  width: 80%
+
+.row
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
+  width: 100%
+  margin-bottom: 10px
+  &:last-child
+    margin-bottom: 0
+
+  .col
+    flex-grow: 1
+    flex-basis: 0
+
+  .col, [class^="col-"], [class*=" col-"]
+    padding-top: 10px
+    padding-right: 10px
+    padding-left: 10px
+
+  @for $col-number from 1 through $columns
+    .col-#{$col-number}
+      width: percentage(($col-number / $columns))
+
+  @media screen and (max-width: 768px)
+    .col, [class^='col-'], [class*=" col-"]
+      flex-grow: 0
+      flex-basis: 100%
+      margin-bottom: 10px
+      padding: 0
+
+      &:last-child
+        margin-bottom: 0
