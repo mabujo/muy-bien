@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import LanguageSwitcher from './LanguageSwitcher';
 import NavbarStyles from '../styles/Navbar.module.sass'
 
 const Navbar = () => (
@@ -13,6 +14,7 @@ const Navbar = () => (
       <div className="navbar-start">
       </div>
       <div className="navbar-end">
+        <LanguageSwitcher/>
       </div>
     </div>
   </nav>
