@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import classNames from "classnames";
 import { translate } from "react-i18next";
+import SwitcherStyles from '../styles/LanguageSwitcher.module.sass'
 
 class LanguageSwitcher extends Component {
   constructor(props) {
@@ -21,21 +22,21 @@ class LanguageSwitcher extends Component {
   }
 
   renderLanguageChoice({ code, label }) {
-    const buttonClass = classNames("LanguageSwitcher__button", {
-      "LanguageSwitcher__button--selected": this.state.language === code,
-    },
-    { "LanguageSwitcher__button--en": code === 'en' },
-    { "LanguageSwitcher__button--es": code === 'es' },
-    );
+    let buttonClassNames = `${SwitcherStyles.button} ${SwitcherStyles[code]} `;
+
+    if (this.state.language === code) {
+      buttonClassNames += `${SwitcherStyles.selected} `;
+      buttonClassNames += ' '
+    }
 
     return (
-      <button
+      <span
         key={code}
-        className={buttonClass}
+        className={buttonClassNames}
         onClick={() => this.handleChangeLanguage(code)}
       >
-        {label}
-      </button>
+        {/*{code}*/}
+      </span>
     );
   }
 

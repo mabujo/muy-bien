@@ -4,17 +4,19 @@ import LanguageSwitcher from './LanguageSwitcher';
 import NavbarStyles from '../styles/Navbar.module.sass'
 
 const Navbar = () => (
-  <nav className={`${NavbarStyles.navbar} container`}>
-    <div>
-      <div className="navbar-brand">
-        <Link to="/" className={NavbarStyles.brandLink}>
-          Muy Bien Espanol
-        </Link>
-      </div>
-      <div className="navbar-start">
-      </div>
-      <div className="navbar-end">
-        <LanguageSwitcher/>
+  <nav className={`${NavbarStyles.navbar}`}>
+    <div className='container'>
+      <div className='row'>
+        <div className="navbar-brand">
+          <Link to="/" className={NavbarStyles.brandLink}>
+            Muy Bien Espanol
+          </Link>
+        </div>
+        <div className="navbar-start">
+        </div>
+        <div className="navbar-end">
+          <LanguageSwitcher/>
+        </div>
       </div>
     </div>
   </nav>

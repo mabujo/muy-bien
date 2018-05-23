@@ -9,7 +9,6 @@ import i18n from '../components/i18n';
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    {console.log(children)}
     <Helmet title="Learn Spanish Online | Muy Bien Espanol" />
     <Navbar />
     <div>{children()}</div>
