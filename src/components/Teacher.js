@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { translate } from "react-i18next";
 import TeacherStyles from '../styles/modules/Teacher.module.sass'
-import TeacherImage from '../img/photo-placeholder.png'
-import TeacherIcon from '../img/user-graduate.svg'
+import TeacherImage from '../img/components/Teacher/photo-placeholder.png'
+import TeacherIcon from '../img/components/Teacher/user-graduate.svg'
 
 class Teacher extends Component {
   render() {
