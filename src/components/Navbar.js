@@ -2,7 +2,7 @@ import React from 'react'
 import { translate } from "react-i18next";
 import Link from 'gatsby-link'
 import LanguageSwitcher from './LanguageSwitcher';
-import NavbarStyles from '../styles/Navbar.module.sass'
+import NavbarStyles from '../styles/modules/Navbar.module.sass'
 
 const Navbar = ({t}) => (
   <nav className={`${NavbarStyles.navbar}`}>

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { translate } from "react-i18next";
-import SwitcherStyles from '../styles/LanguageSwitcher.module.sass'
+import SwitcherStyles from '../styles/modules/LanguageSwitcher.module.sass'
 
 class LanguageSwitcher extends Component {
   constructor(props) {
