@@ -16,7 +16,7 @@ class Teacher extends Component {
           </div>
           <div className="row">
             <div className="col-3">
-              <img className={TeacherStyles.avatar} src={TeacherImage} alt="{t('spanish-teacher')}"/>
+              <img className={`${TeacherStyles.avatar}`} src={TeacherImage} alt="{t('spanish-teacher')}"/>
             </div>
             <div className="col-5">
               <p>{t('paragraph-one')}</p>
