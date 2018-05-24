@@ -1,15 +1,16 @@
 import React from 'react'
+import { translate } from "react-i18next";
 import Link from 'gatsby-link'
 import LanguageSwitcher from './LanguageSwitcher';
 import NavbarStyles from '../styles/Navbar.module.sass'
 
-const Navbar = () => (
+const Navbar = ({t}) => (
   <nav className={`${NavbarStyles.navbar}`}>
     <div className='container'>
       <div className='row'>
         <div className="navbar-brand">
           <Link to="/" className={NavbarStyles.brandLink}>
-            Muy Bien Espanol
+            {t('title')}
           </Link>
         </div>
         <div className="navbar-start">
@@ -22,4 +23,4 @@ const Navbar = () => (
   </nav>
 );
 
-export default Navbar
+export default translate('Navbar')(Navbar);

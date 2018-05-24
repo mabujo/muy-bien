@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import classNames from "classnames";
 import { translate } from "react-i18next";
 import SwitcherStyles from '../styles/LanguageSwitcher.module.sass'
 
