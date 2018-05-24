@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { translate } from "react-i18next";
-import HeroStyles from '../styles/Hero.module.sass'
+import HeroStyles from '../styles/modules/Hero.module.sass'
 
 class Hero extends Component {
   render() {
