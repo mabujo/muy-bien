@@ -2,17 +2,17 @@ import React, { Component } from 'react'
 import { translate } from "react-i18next";
 import TeacherStyles from '../styles/modules/Teacher.module.sass'
 import TeacherImage from '../img/components/Teacher/photo-placeholder.png'
-import TeacherIcon from '../img/components/Teacher/user-graduate.svg'
 
 class Teacher extends Component {
   render() {
-    const { t } = this.props;
+    const { t, classes } = this.props;
     return (
-      <section id={TeacherStyles.Teacher}>
+      <section id={TeacherStyles.Teacher} className={classes}>
         <div className={`container`}>
           <div className={`row ${TeacherStyles.heading}`}>
-            <h1>{t('about')}</h1>
-            <img src={TeacherIcon} alt="" className={`fa-icon ${TeacherStyles.userGraduate}`}/>
+            <div className="col-8">
+              <h1>{t('about')}</h1>
+            </div>
           </div>
           <div className="row">
             <div className="col-3">

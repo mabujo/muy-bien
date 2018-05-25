@@ -1,5 +1,7 @@
 @import "fonts.css"
 @import "variables"
+@import "breakpoints"
+
 *
   box-sizing: border-box
 
@@ -49,3 +51,15 @@ a
   margin-top: 0 !important
 
 @import "grid"
+
+.section
+  padding: 2em 0
+
+.section-stripe
+  background: $section-stripe
+
+@include breakpoint(mobile)
+  .h1
+    text-align: center
+  .section
+    text-align: center
