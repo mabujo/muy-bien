@@ -17,7 +17,7 @@ class Lessons extends Component {
             <div className="col-5">
               <p>{t('paragraph-one')}</p>
               <p>{t('paragraph-two')}</p>
-              <p>{t('paragraph-three')}</p>
+              <p>{t('paragraph-three')} <span className={`${LessonsStyles.price}`}>25€</span></p>
             </div>
           </div>
         </div>

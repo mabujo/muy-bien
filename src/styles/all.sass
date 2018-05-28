@@ -1,4 +1,4 @@
-@import "fonts.css"
+@import "fonts"
 @import "variables"
 @import "breakpoints"
 
@@ -15,14 +15,16 @@ body
   -webkit-font-feature-settings: "liga","kern"
   font-feature-settings: "liga","kern"
   min-height: 2000px
+  color: $text-color
 
 a
   text-decoration: none
   &:hover
     text-decoration: underline
+  @include Brasley-Regular
 
 .image-replacement
-  text-indent: 100%
+  text-indent: 200%
   white-space: nowrap
 
 .content .taglist

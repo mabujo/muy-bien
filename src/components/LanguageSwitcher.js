@@ -7,6 +7,7 @@ class LanguageSwitcher extends Component {
     super(props);
     const { i18n } = this.props;
     this.state = { language: i18n.language };
+    this.classes = props.classes;
 
     this.handleChangeLanguage = this.handleChangeLanguage.bind(this);
   }
@@ -46,7 +47,7 @@ class LanguageSwitcher extends Component {
     ];
 
     return (
-      <div className="LanguageSwitcher">
+      <div className={`LanguageSwitcher ${this.classes}`}>
         {languages.map(language => this.renderLanguageChoice(language))}
       </div>
     );

@@ -9,9 +9,11 @@ const Navbar = ({t}) => (
     <div className='container'>
       <div className='row'>
         <div className="navbar-brand">
-          <Link to="/" className={`${NavbarStyles.brandLink} ${NavbarStyles.logo} image-replacement`}>
-            {t('title')}
-          </Link>
+          <h1>
+            <Link to="/" className={`${NavbarStyles.brandLink} ${NavbarStyles.logo} image-replacement`}>
+              {t('title')}
+            </Link>
+          </h1>
         </div>
         <div className="navbar-start">
         </div>

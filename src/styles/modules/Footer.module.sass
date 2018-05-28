@@ -1,0 +1,59 @@
+@import "../variables"
+@import "../breakpoints"
+
+.above
+  min-height: 12em
+  background-color: $darker-section
+  -webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%)
+  clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%)
+  box-shadow: 0 -1px 0 rgba(0,0,0,.05)
+
+.Footer
+  background-color: $darker-section
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  text-align: center
+
+.inner
+  min-height: 18em
+  width: 100%
+  padding-top: 2em
+
+.list
+  margin: 0
+  li
+    list-style: none
+    a
+      color: $text-color
+      font-family: Brasley-Bold, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+      font-size: 0.95em
+
+.logo
+  background: url('../../img/logo_coloured_transparent_compressed.png')
+  overflow: hidden
+  display: block
+  background-size: 134px 71px
+  width: 134px
+  height: 71px
+
+.under
+  position: absolute
+  left: 0
+  right: 0
+  bottom: 0
+  margin-bottom: 1em
+
+.copyright
+  width: 100%
+  text-align: center
+  font-size: 1em
+  margin-bottom: 0
+
+.LanguageSwitcher
+  filter: grayscale(60%)
+
+@include breakpoint(mobile)
+  .logo
+    margin: 0 auto

@@ -4,7 +4,7 @@ $columns: 8
 .container
   max-width: $max-width
   margin: 0 auto
-  padding: 0.5em 1em
+  padding: 0.5em 2em
 
 .row
   flex-direction: row
@@ -17,9 +17,9 @@ $columns: 8
     margin-bottom: 0
 
   .col, [class^="col-"], [class*=" col-"]
-    padding-top: 10px
-    padding-right: 10px
-    padding-left: 10px
+    padding-top: 1em
+    padding-right: 1em
+    padding-left: 1em
 
   @for $col-number from 1 through $columns
     .col-#{$col-number}
