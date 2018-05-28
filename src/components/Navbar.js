@@ -9,7 +9,7 @@ const Navbar = ({t}) => (
     <div className='container'>
       <div className='row'>
         <div className="navbar-brand">
-          <Link to="/" className={NavbarStyles.brandLink}>
+          <Link to="/" className={`${NavbarStyles.brandLink} ${NavbarStyles.logo} image-replacement`}>
             {t('title')}
           </Link>
         </div>
