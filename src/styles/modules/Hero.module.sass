@@ -20,3 +20,23 @@
   font-size: 1.3rem
   line-height: 1.8rem
 
+.button
+  display: inline-block
+  margin-right: 1em
+  background: $button-color
+  color: $white
+  padding: .8rem
+  border-radius: 6px
+  border: none
+  font-family: Brasley-Bold, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
+  cursor: pointer
+  &:hover
+    background: darken($button-color, 10%)
+  &.ghost
+    background: transparent
+    border: 2px solid #fff
+    padding: .65rem
+    &:hover
+      background: rgba(255, 255, 255, 0.2)
+
+

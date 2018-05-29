@@ -7,7 +7,7 @@ class Teacher extends Component {
   render() {
     const { t, classes } = this.props;
     return (
-      <section id={TeacherStyles.Teacher} className={classes}>
+      <section id="Teacher" className={classes}>
         <div className={`container`}>
           <div className={`row ${TeacherStyles.heading}`}>
             <div className="col-8">
