@@ -40,7 +40,7 @@ module.exports = class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <form name="contact" netlify  netlify-honeypot="very-important-field" hidden>
+          <form name="contact" netlify data-netlify="true" netlify-honeypot="very-important-field" hidden>
             <input type="text" name="name" />
             <input type="email" name="email" />
             <textarea name="message"></textarea>
