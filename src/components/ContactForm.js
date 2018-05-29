@@ -26,7 +26,7 @@ class ContactForm extends Component {
 
     return (
       <div className={`container ${ContactFormStyles.ContactForm}`}>
-        <form id={this.props.id} action="/" name="contact-form" method="POST" data-netlify="true" netlify-honeypot="very-important-field">
+        <form id={this.props.id} action="/" name="contact" method="POST" data-netlify="true" netlify-honeypot="very-important-field">
           <div className="row">
             <label>
               <span className="form-label">{t('name')}</span>
@@ -49,7 +49,7 @@ class ContactForm extends Component {
           <p className="hidden">
             <label>Don’t fill this out if you're human: <input name="very-important-field" className="hidden"/></label>
           </p>
-          <input type="hidden" name="form-name" value="contact-form" />
+          <input type="hidden" name="form-name" value="contact" />
         </form>
       </div>
     )
