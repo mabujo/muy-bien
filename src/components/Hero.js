@@ -73,12 +73,22 @@ const _contactFormId = 'contactForm';
 let _triggerCloseModal;
 let _triggerShowToast;
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+    .join("&");
+};
+
 const submitContactForm = (event) => {
   event.preventDefault();
   const contactForm = document.getElementById(_contactFormId);
   fetch(contactForm.action, {
     method: 'POST',
-    body: _contactFormState
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: encode({
+      "form-name": contactForm.getAttribute("name"),
+      ..._contactFormState
+    })
   })
     .then(() => {
       if (typeof _triggerCloseModal === 'function') {
