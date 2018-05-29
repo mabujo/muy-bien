@@ -26,7 +26,7 @@ class ContactForm extends Component {
 
     return (
       <div className={`container ${ContactFormStyles.ContactForm}`}>
-        <form id={this.props.id} action="/" name="contact-form" method="POST" data-netlify="true" netlify="true" netlify-honeypot="very-important-field">
+        <form id={this.props.id} action="https://muybienespanol.com/" name="contact-form" method="POST" data-netlify="true" netlify="true" netlify-honeypot="very-important-field">
           <div className="row">
             <label>
               <span className="form-label">{t('name')}</span>

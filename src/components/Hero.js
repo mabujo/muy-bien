@@ -82,7 +82,7 @@ const encode = (data) => {
 const submitContactForm = (event) => {
   event.preventDefault();
   const contactForm = document.getElementById(_contactFormId);
-  fetch("/", {
+  fetch("https://muybienespanol.com/", {
     method: 'POST',
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({
