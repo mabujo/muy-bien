@@ -48,7 +48,7 @@ class ContactForm extends Component {
           </div>
           <p className="hidden">
             <label>Don’t fill this out if you're human: <input name="very-important-field" className="hidden"/></label>
-            <input type="hidden" name="contact-form" value="contact" />
+            <input type="hidden" name="contact-form" value="contact-form" />
           </p>
         </form>
       </div>
