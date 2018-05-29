@@ -18,59 +18,34 @@ body
   color: $text-color
   letter-spacing: .01em
 
-
 a
   text-decoration: none
   &:hover
     text-decoration: underline
   @include Brasley-Regular
 
-.image-replacement
+.image-replacement, .hidden
   text-indent: 200%
   white-space: nowrap
 
+.hidden
+  display: none
+
 .animate
   transition: .085s all ease-in
-
-.content .taglist
-  list-style: none
-  margin-bottom: 0
-  margin-left: 0
-  margin-right: 1.5rem
-  margin-top: 1.5rem
-  display: flex
-  flex-wrap: wrap
-  justify-content: left
-  align-items: center
-  li
-    padding: 0 2rem 1rem 0
-    margin-bottom: 1.5rem
-    margin-top: 0
-
-// Helper Classes
-.full-width-image-container
-  width: 100vw
-  height: 400px
-  position: relative
-  left: 50%
-  right: 50%
-  margin: 5em -50vw
-  background-size: cover
-  background-position: bottom
-  display: flex
-  justify-content: center
-  align-items: center
 
 .margin-top-0
   margin-top: 0 !important
 
 @import "grid"
+@import "forms"
 
 .section
   padding: 4em 0
 
 .section-stripe
   background: $section-stripe
+
 
 @include breakpoint(mobile)
   .h1

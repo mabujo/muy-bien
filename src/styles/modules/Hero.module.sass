@@ -9,7 +9,7 @@
   background-image: -moz-linear-gradient(225deg, $secondary 0%, $primary 33%)
   background-image: -o-linear-gradient(225deg, $secondary 0%, $primary 33%)
   background-image: linear-gradient(225deg, $secondary 0%, $primary 33%)
-  color: $white
+  color: $heroWhite
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 100%)
   clip-path: polygon(0 0, 100% 0, 100% 66%, 0% 100%)
 
@@ -20,23 +20,17 @@
   font-size: 1.3rem
   line-height: 1.8rem
 
-.button
-  display: inline-block
-  margin-right: 1em
-  background: $button-color
-  color: $white
-  padding: .8rem
-  border-radius: 6px
-  border: none
-  font-family: Brasley-Bold, BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif
-  cursor: pointer
-  &:hover
-    background: darken($button-color, 10%)
-  &.ghost
-    background: transparent
-    border: 2px solid #fff
-    padding: .65rem
-    &:hover
-      background: rgba(255, 255, 255, 0.2)
+.submitButton
+  margin: 0 0 0 1em
 
+.ModalButton
+  margin: 0 0 0 auto
+  background: transparent
+  color: #878787
+  border: 2px solid #ccc
+  padding: .65rem .5rem
+  &:hover
+    background: rgba(205, 205, 205, 0.5)
+  &:focus
+    outline: 0
 

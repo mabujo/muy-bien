@@ -1,0 +1,26 @@
+@import "../variables"
+
+.Toast
+  position: absolute
+  z-index: 100
+  top: -5em
+  left: 50%
+  transform: translate(-50%, -50%)
+  max-width: 20em
+  background: rgba(0, 158, 15, 0.85)
+  border-radius: 3px
+  display: none
+
+.ToastShow
+  display: block
+  animation: enter 2s
+
+.content
+  padding: 1em
+  color: $white
+
+@keyframes enter
+  from
+    top: -2em
+  to
+    top: 5em
