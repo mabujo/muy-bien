@@ -82,7 +82,7 @@ const encode = (data) => {
 const submitContactForm = (event) => {
   event.preventDefault();
   const contactForm = document.getElementById(_contactFormId);
-  fetch("https://muybienespanol.com/", {
+  fetch("/", {
     method: 'POST',
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: encode({
@@ -93,6 +93,7 @@ const submitContactForm = (event) => {
     .then(() => {
       if (typeof _triggerCloseModal === 'function') {
         _triggerCloseModal();
+        scroll().scrollTo(0, 0, 0);
         _triggerShowToast();
       }
     })
