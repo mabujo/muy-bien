@@ -36,13 +36,13 @@ class ContactForm extends Component {
           <div className="row">
             <label>
               <span className="form-label">{t('email')}</span>
-              <input type="email" value={this.state.email} onChange={this.handleChange} id="email" autoComplete="email"/>
+              <input type="email" value={this.state.email} onChange={this.handleChange} id="email" autoComplete="email" required/>
             </label>
           </div>
           <div className="row">
             <label>
               <span className="form-label">{t('message')}</span>
-              <textarea name="message" value={this.state.message} onChange={this.handleChange} id="message" placeholder={t('your-message')} >
+              <textarea name="message" value={this.state.message} onChange={this.handleChange} id="message" placeholder={t('your-message')} required>
               </textarea>
             </label>
           </div>
