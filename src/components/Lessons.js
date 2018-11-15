@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { translate } from "react-i18next";
 import LessonsStyles from '../styles/modules/Lessons.module.sass'
+import LessonsImage from '../img/components/Lessons/lessons.jpg'
 
 class Lessons extends Component {
   render() {
@@ -18,6 +19,9 @@ class Lessons extends Component {
               <p>{t('paragraph-one')}</p>
               <p>{t('paragraph-two')}</p>
               <p>{t('paragraph-three')} <span className={`${LessonsStyles.price}`}>25€</span></p>
+            </div>
+            <div className="col-3">
+              <img src={LessonsImage} alt={t('heading')} className={`feature-image`}/>
             </div>
           </div>
         </div>

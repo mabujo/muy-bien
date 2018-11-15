@@ -46,6 +46,7 @@ class ContactForm extends Component {
               </textarea>
             </label>
           </div>
+          <div data-netlify-recaptcha></div>
           <p className="hidden">
             <label>Don’t fill this out if you're human: <input name="very-important-field" className="hidden"/></label>
           </p>
